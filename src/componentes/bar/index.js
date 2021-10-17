@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography, TextField } from '@mui/material';
 import { Search } from '@mui/icons-material';
 
 import './styles.css';
@@ -8,11 +8,15 @@ import './styles.css';
 function Bar() {
     return (
         <AppBar id="appBar" position='static'>
-            <Toolbar variant="dense">
-                <Typography variant="h6" color="inherit" component="div" style={{color: "#000000"}}>
+            <Toolbar id="toolBar" variant="dense">
+                <Typography variant="h6" color="inherit" component="div" style={{ color: "#656A6A", fontWeight: "bold" }}>
                     React Maps
                 </Typography>
-                <IconButton edge="start" style={{color: "#000000"}} color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+
+                <div id="searchBar">
+                    <TextField id="searchText" label="Search" />
+                </div>
+                <IconButton edge="start" style={{ color: "#656A6A" }} color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                     <Search />
                 </IconButton>
             </Toolbar>

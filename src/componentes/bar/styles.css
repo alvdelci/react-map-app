@@ -1,3 +1,18 @@
 #appBar {
     background: linear-gradient(rgba(60, 207, 207, 0.5), rgba(159, 167, 167, 0.2));
 }
+
+#toolBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchBar {
+    padding-top: 5px;
+    outline: none;
+}
+
+#searchText {
+    height: 10px;
+    width: 300px;
+}
