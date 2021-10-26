@@ -1,7 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
 }
 
 #map-container {
-    height: 100vh;
+    height: 92.5vh;
 }
