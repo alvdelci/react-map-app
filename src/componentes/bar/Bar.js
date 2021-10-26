@@ -13,9 +13,6 @@ function Bar() {
                     React Maps
                 </Typography>
 
-                <div id="searchBar">
-                    <TextField id="searchText" label="Search" />
-                </div>
                 <IconButton edge="start" style={{ color: "#656A6A" }} color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                     <Search />
                 </IconButton>
