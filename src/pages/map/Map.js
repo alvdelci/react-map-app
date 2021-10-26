@@ -2,7 +2,7 @@ import React from "react";
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-import Bar from "../../componentes/bar";
+import Bar from "../../componentes/bar/Bar";
 
 import './styles.css';
 
@@ -14,13 +14,13 @@ function Map() {
             <MapContainer
                 id="map-container"
                 center={[-12.673960, -39.102010]}
-                zoom={6}
-                minZoom={13}
+                zoom={13}
+                minZoom={3}
                 maxBounds={[
                     //south west
-                    [-84.969265, 180.000000],
+                    [-180.000000, 180.000000],
                     //north east
-                    [84.969265, -179.999999]
+                    [180.000000, -180.000000]
                 ]}
                 maxBoundsViscosity={1.0}
             >
