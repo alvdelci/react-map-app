@@ -5,8 +5,24 @@ class ActionProvider {
     this.createClientMessage = createClientMessage;
   }
 
+  //Action de mensagem de resposta "hello"
   handleHello() {
     const botMessage = this.createChatbotMessage("Hello, nice to meet you");
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  }
+
+  //Action de mensagem de resposta para "dog"
+  handleDog() {
+    const botMessage = this.createChatbotMessage(
+      "Aqui a imagem de um cachorro!",
+      {
+        widget: "dogPicture",
+      }
+    );
 
     this.setState((prev) => ({
       ...prev,

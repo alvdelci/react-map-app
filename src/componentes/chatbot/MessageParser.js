@@ -4,9 +4,16 @@ class MessageParser {
     this.state = state;
   }
 
+  //Tratamento da resposta para "hello"
   parse(message) {
+    //Resposta para "hello"
     if (message.includes("hello")) {
       this.actionProvider.handleHello();
+    }
+
+    //Resposta para "dog"
+    if (message.includes("dog")) {
+      this.actionProvider.handleDog();
     }
   }
 }
