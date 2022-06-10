@@ -1,5 +1,6 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import DogPicture from "./DogPicture";
+import { BotAvatar, UserAvatar } from "./avatares/Avatar";
 
 const botName = "Dona Maria";
 
@@ -17,6 +18,11 @@ const config = {
     chatButton: {
       backgroundColor: "orange",
     },
+  },
+  //Configuraçao dos avatares
+  customComponents: {
+    botAvatar: (props) => <BotAvatar {...props} />,
+    userAvatar: (props) => <UserAvatar {...props} />,
   },
   //Widgets
   widgets: [
