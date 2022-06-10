@@ -12,7 +12,7 @@ class MessageParser {
     }
 
     //Resposta para "dog"
-    if (message.includes("dog")) {
+    if (message.includes("show me a dog")) {
       this.actionProvider.handleDog();
     }
   }
