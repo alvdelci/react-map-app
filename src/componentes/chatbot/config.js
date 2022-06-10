@@ -21,6 +21,21 @@ const config = {
   },
   //Configuraçao dos avatares
   customComponents: {
+    header: () => (
+      <div
+        style={{
+          background: "Orange",
+          color: "white",
+          height: "30px",
+          textAlign: "center",
+          paddingTop: "10px",
+          borderTopRightRadius: "10px",
+          borderTopLeftRadius: "10px",
+        }}
+      >
+        Chat com {botName}
+      </div>
+    ),
     botAvatar: (props) => <BotAvatar {...props} />,
     userAvatar: (props) => <UserAvatar {...props} />,
   },
