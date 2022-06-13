@@ -11,9 +11,14 @@ class MessageParser {
       this.actionProvider.handleHello();
     }
 
-    //Resposta para "dog"
+    //Resposta para "show me a dog"
     if (message.includes("show me a dog")) {
       this.actionProvider.handleDog();
+    }
+
+    //Resposta para "minhas opções"
+    if (message.includes("mostre minhas opções")) {
+      this.actionProvider.handleGetData();
     }
   }
 }

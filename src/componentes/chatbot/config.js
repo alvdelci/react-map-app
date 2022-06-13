@@ -1,5 +1,6 @@
 import { createChatBotMessage } from "react-chatbot-kit";
-import DogPicture from "./DogPicture";
+import DogPicture from "./widgets/DogPicture";
+import GetData from "./widgets/GetData";
 import { BotAvatar, UserAvatar } from "./avatares/Avatar";
 
 const botName = "Dona Maria";
@@ -45,6 +46,11 @@ const config = {
     {
       widgetName: "dogPicture",
       widgetFunc: (props) => <DogPicture {...props} />,
+    },
+    //GetData
+    {
+      widgetName: "getData",
+      widgetFunc: (props) => <GetData {...props} />,
     },
   ],
 };

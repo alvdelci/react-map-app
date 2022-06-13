@@ -29,6 +29,18 @@ class ActionProvider {
       messages: [...prev.messages, botMessage],
     }));
   }
+
+  //Action de mensagem de resposta para o getData
+  handleGetData() {
+    const botMessage = this.createChatbotMessage("Suas opções estão abaixo!", {
+      widget: "getData",
+    });
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  }
 }
 
 export default ActionProvider;
